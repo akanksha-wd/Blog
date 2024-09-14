@@ -1,0 +1,64 @@
+<!-- auth.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Blog - Sign Up / Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="header-title"> Blog</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="auth.html" class="nav-link">Sign Up / Login</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Sign Up and Login Forms -->
+        <section class="auth-section">
+            <h2>Sign Up</h2>
+            <form id="signupForm" class="form">
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" class="input" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" class="input" required>
+                <button type="submit" class="btn">Sign Up</button>
+            </form>
+
+            <h2>Login</h2>
+            <form id="loginForm" class="form">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" class="input" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" class="input" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </section>
+
+        <!-- Blog Management Section -->
+        <section class="manage-posts">
+            <h2>Create or Edit Your Posts</h2>
+            <form id="postForm" class="form">
+                <input type="text" id="postTitle" class="input" placeholder="Post Title" required>
+                <textarea id="postContent" class="textarea" placeholder="Post Content..." required></textarea>
+                <button type="submit" class="btn">Save Post</button>
+            </form>
+            <div id="managePostsContainer" class="posts-container">
+                <!-- User posts will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

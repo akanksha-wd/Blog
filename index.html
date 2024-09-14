@@ -1,0 +1,50 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog -HOME</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display&display=swap"rel="stylesheet">
+</head>
+<body>
+    <!--Header Section-->
+  <header class="header">
+    <h1 class="header-title">Blog</h1>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">HOME</a></li>
+        <li><a href="auth.html" class="nav-link">Sign Up/ Login</a></li>
+
+        </ul>
+        </nav>
+        </header>
+
+
+<!--Main content Area-->
+<main class="main-content">
+    <section class ="blog-section">
+        <h2> Recent Blog Posts </h2>
+        <div id="postcontainer"class ="post.container">
+            <!--Blog posts will be dynamically inserted here-->
+
+        </div>
+    </section>
+    <!--comment Section-->
+    <section class="comment-section">
+        <h2>Comments</h2>
+        <div id="commentsContainer" class="comments-container">
+
+        </div>
+        <form id="commentForm" class="Form">
+            <textarea id="commentText"class="textarea"placeholder="Add a comment..."required></textarea>
+            <button type="submit"class="btn">Post comment</button>
+        </form>
+
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
